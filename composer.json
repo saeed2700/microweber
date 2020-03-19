@@ -22,16 +22,16 @@
   "require": {
     "composer/composer": "v1.8.5",
     "composer/installers": "1.*",
-    "laravel/framework": "5.4.*",
-    "illuminate/contracts": "5.4.*",
+    "laravel/framework": "5.5.*",
+    "illuminate/contracts": "5.5.*",
     "guzzlehttp/guzzle": "~6.0",
     "laravel/socialite": "3.0.2",
     "socialiteproviders/linkedin": "*",
-    "illuminate/support": "5.4.*",
-    "symfony/http-foundation": "3.4.*", 
+    "illuminate/support": "5.5.*",
+    "symfony/http-foundation": "3.4.*",
     "vlucas/phpdotenv": "2.2",
     "rcrowe/twigbridge": "^0.9.6",
-    "graham-campbell/markdown": "7.1.x-dev",
+    "graham-campbell/markdown": "11.2",
     "keboola/csv": "1.1.*",
     "league/omnipay": "2.*",
     "omnipay/stripe": "~2.0",
@@ -43,7 +43,7 @@
     "omnipay/common": "*",
     "league/csv": "^7.2",
     "giggsey/libphonenumber-for-php": "^7.6",
-    "laravelcollective/html": "5.4.*",
+    "laravelcollective/html": "5.5.*",
     "ezyang/htmlpurifier": "^4.8",
     "jeremeamia/superclosure": "2.*",
     "arcanedev/seo-helper": "1.2",
@@ -67,12 +67,19 @@
     "microweber-templates/dream": "dev-master"
    },
   "require-dev": {
-      "fzaninotto/faker": "^1.9"
+      "fzaninotto/faker": "^1.9",
+      "filp/whoops": "~2.0"
   },
   "autoload": {
     "psr-4": {
       "": "src/",
       "App\\": "app/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "dont-discover": [
+        ]
     }
   },
   "scripts": {
