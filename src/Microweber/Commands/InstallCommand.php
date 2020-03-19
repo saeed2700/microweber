@@ -20,6 +20,11 @@ class InstallCommand extends Command
         parent::__construct();
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     public function fire()
     {
         /*
